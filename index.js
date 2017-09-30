@@ -5,7 +5,6 @@ function setKittens() {
 }
 
 function destructivelyAppendKitten(name) {
-  setKittens()
   kittens.push(name)
   return kittens
 }
@@ -17,41 +16,35 @@ function destructivelyPrependKitten(name) {
 }
 
 function destructivelyRemoveLastKitten() {
-  setKittens()
   kittens.pop()
   return kittens
 }
 
 function destructivelyRemoveFirstKitten() {
-  setKittens()
   kittens.shift()
   return kittens
 }
 
 function appendKitten(name) {
-  setKittens()
-  var newArray = kittens
+  var newArray = kittens.slice(0)
   newArray.push(name)
   return newArray
 }
 
 function prependKitten(name) {
-  setKittens()
-  var newArray = kittens
+  var newArray = kittens.slice(0)
   newArray.unshift(name)
   return newArray
 }
 
 function removeLastKitten() {
-  setKittens()
-  var newArray = kittens
+  var newArray = kittens.slice(0)
   newArray.pop()
   return newArray
 }
 
 function removeFirstKitten() {
-  setKittens()
-  var newArray = kittens
+  var newArray = kittens.slice(0)
   newArray.shift()
   return newArray
 }
