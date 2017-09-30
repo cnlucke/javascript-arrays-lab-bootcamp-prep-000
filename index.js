@@ -1,6 +1,6 @@
 const kittens = "I don't do much"
 
-function kittens () {
+function kittens() {
   kittens = ["Milo", "Otis", "Garfield"]
 }
 
@@ -9,14 +9,15 @@ function destructivelyAppendKitten(name) {
   return kittens
 }
 
+function destructivelyPrependKitten(name) {
+  kittens.unshift(name)
+  return kittens
+}
 
-
-1) Arrays destructivelyAppendKitten(name) appends a kitten to the end of the kittens array:
-     ReferenceError: destructivelyAppendKitten is not defined
-      at Context.<anonymous> (test/index-test.js:14:7)
-  2) Arrays destructivelyPrependKitten(name) prepends a kitten to the beginning of the kittens array:
-     ReferenceError: destructivelyPrependKitten is not defined
-      at Context.<anonymous> (test/index-test.js:21:7)
+function destructivelyRemoveLastKitten() {
+  kittens.pop
+  return kittens
+}
   3) Arrays destructivelyRemoveLastKitten() removes the last kitten from the kittens array:
      ReferenceError: destructivelyRemoveLastKitten is not defined
       at Context.<anonymous> (test/index-test.js:29:7)
