@@ -1,4 +1,4 @@
-const kittens = "I don't do much"
+//const kittens = "I don't do much"
 
 function kittens() {
   kittens = ["Milo", "Otis", "Garfield"]
