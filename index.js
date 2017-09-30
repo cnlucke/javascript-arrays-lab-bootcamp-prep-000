@@ -12,12 +12,12 @@ function destructivelyPrependKitten(name) {
 }
 
 function destructivelyRemoveLastKitten() {
-  kittens.pop
+  kittens.pop()
   return kittens
 }
 
 function destructivelyRemoveFirstKitten() {
-  kittens.shift
+  kittens.shift()
   return kittens
 }
 
@@ -35,12 +35,12 @@ function prependKitten(name) {
 
 function removeLastKitten() {
   newArray = kittens
-  newArray.pop
+  newArray.pop()
   return newArray
 }
 
 function removeFirstKitten() {
   newArray = kittens
-  newArray.shift
+  newArray.shift()
   return newArray
 }
