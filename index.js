@@ -1,8 +1,4 @@
-//const kittens = "I don't do much"
-
-function setKittens() {
-  kittens = ["Milo", "Otis", "Garfield"]
-}
+const  kittens = ["Milo", "Otis", "Garfield"]
 
 function destructivelyAppendKitten(name) {
   kittens.push(name)
